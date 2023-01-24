@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: red;
+}
+
+.logo {
+  background-image: url(./logonav.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 50px;
+}
+
+.banner {
+  background: rgba(0, 0, 0, 0.6) url(./bannerhome.jpg);
+  background-blend-mode: darken;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  /* min-height: 100vh; */
+  min-height: 1000px;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  border-bottom: 1px solid rgb(247, 243, 243, 0.4);
+  background-color: #fff;
+}
+
+.navigation {
+  background-color: white;
+  max-width: 1320px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.servicesList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0 17px;
+}
+
+.marginLeft {
+  margin-left: auto;
+}
+
+li {
+  margin-left: 40px;
+  font-size: 17px;
+  color: #666;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.banner,
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer {
+  width: 1200px;
+  padding-top: 160px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 17px;
+}
+
+.mainText {
+  font-size: 55px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.discover {
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+  background-color: #ffa801;
+  border: 2px #ffa801 solid;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  width: 170px;
+  height: 50px;
+}
+
+.discover:hover {
+  background-color: transparent;
+  border: 2px #fff solid;
+  transition: background 1s;
+}
+
+.settingsIconHolder {
+  position: fixed;
+  left: 0px;
+  top: 200px;
+}
+
+.settings {
+  border: 2px #ffa801 solid;
+  background-color: #ffa801;
+  border-radius: 0px 5px 5px 0px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotate {
+  animation-name: rotating;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
